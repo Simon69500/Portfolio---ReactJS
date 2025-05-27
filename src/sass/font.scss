@@ -1,0 +1,13 @@
+$font-main: 'Nunito Sans', sans-serif;
+
+// Police pour le texte
+@mixin font-main-text {
+  font-family: $font-main;
+  font-weight: 400;
+}
+
+// Police pour les titres
+@mixin font-main-title {
+  font-family: $font-main;
+  font-weight: 600;
+}
