@@ -1,0 +1,9 @@
+@import '../font.scss';
+@import '../variables';
+
+.titleMenu {
+  @include font-main-title;
+  text-align: center;
+  padding-left: 20px;
+}
+
