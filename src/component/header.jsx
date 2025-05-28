@@ -5,11 +5,11 @@ import '../sass/component/header.scss';
 export default function Header() {
     return (
         <>
-            {/* Menu burger  */}
+            {/* Menu burger - Mobile */}
             <div className="d-block d-md-none position-relative">
                 
                 
-                {/* Contenu du menu */}
+                {/* Contenu du menu - Mobile */}
                   <div
                     className="collapse position-absolute bg-dark rounded shadow w-100"
                     id="navbarToggleExternalContent"
@@ -28,7 +28,7 @@ export default function Header() {
                     </div>
                 </div>
 
-                {/* Bouton burger */}
+                {/* Bouton burger - Mobile */}
                 <nav className="navbar navbar-dark bg-dark d-flex align-items-center px3">
                     <h1 className="titleMenu text-light m-0 ps-5">JOHN DOE</h1>
                         <button
@@ -46,7 +46,7 @@ export default function Header() {
             </div>
 
 
-            {/* Menu desktop */}
+            {/* Menu desktop - tablette*/}
             <div className="cardBurgerMenu  d-none d-md-flex bg-dark p-2 align-items-center justify-content-between">
                 <h1 className="titleMenu text-light m-0 ps-5">JOHN DOE</h1>
                 <ul className="listMenu nav pe-5">
