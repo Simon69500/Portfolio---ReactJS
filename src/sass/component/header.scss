@@ -1,5 +1,6 @@
 @import '../font.scss';
 @import '../variables';
+ @import '~bootstrap/scss/bootstrap';
 
 .titleMenu {
   @include font-main-title;
