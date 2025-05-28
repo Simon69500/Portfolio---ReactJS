@@ -1,6 +1,6 @@
 import Header from "../component/header"
 
-export default function Realisation() {
+export default function Portfolio() {
 return(
     <div>
     <Header/>
