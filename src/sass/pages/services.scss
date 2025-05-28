@@ -1,0 +1,20 @@
+@import '../font.scss';
+@import '../variables';
+
+.containerService {
+    @include font-main-text;
+
+    .card {
+      &:hover {
+        background-color: #efefef;
+        box-shadow: 0 4px 8px rgba(108, 117, 125, 0.3); 
+        border: 1px solid #dee2e6;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+  }
+    }
+
+    .cardTitle {
+        @include font-main-title;
+    }
+}
