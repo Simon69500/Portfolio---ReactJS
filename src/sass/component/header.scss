@@ -24,11 +24,18 @@
 
 
 .listMenu {
-    @include font-main-title;
-      .active-link {
-        text-decoration: underline;
-        text-decoration-color: $light;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 3px;
-    }
+  @include font-main-title;
+
+  .nav-link {
+    font-weight: 400; 
+    transition: all 0.2s ease-in-out;
+  }
+
+  .active-link {
+    text-decoration: underline;
+    text-decoration-color: $light;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    font-weight: 900; 
+  }
 }
