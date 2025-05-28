@@ -1,9 +1,10 @@
 /* Error: Can't find stylesheet to import.
  *   ,
- * 1 | @import './font';
- *   |         ^^^^^^^^
+ * 2 | @import '~bootstrap/scss/bootstrap'
+ *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
  *   '
- *   header.scss 1:9  root stylesheet */
+ *   ..\variables.scss 2:9  @import
+ *   header.scss 2:9        root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +14,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import './font';\d\a   \2502          ^^^^^^^^\a   \2575 \a   header.scss 1:9  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import '~bootstrap/scss/bootstrap'\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   ..\\variables.scss 2:9  @import\a   header.scss 2:9        root stylesheet";
 }
