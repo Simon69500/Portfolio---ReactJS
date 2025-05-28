@@ -1,0 +1,15 @@
+@import '../font.scss';
+@import '../variables';
+
+main {
+    @include font-main-text;
+    background-color: #efefef;
+
+    .cardTitle {
+        @include font-main-title;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px rgba(108, 117, 125, 0.3); 
+    }
+}
