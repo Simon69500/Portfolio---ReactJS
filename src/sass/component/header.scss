@@ -8,6 +8,7 @@
   padding-left: 20px;
 }
 
+/* Partie Mobile*/
 .cardBurgerMenu   {
   .burgerList  {
   @include font-main-title;
@@ -22,7 +23,7 @@
 }
 
 
-
+/* Partie Desktop*/
 .listMenu {
   @include font-main-title;
 
