@@ -1,0 +1,10 @@
+@import '../font.scss';
+@import '../variables';
+
+main {
+    @include font-main-text;
+
+    .cardTitle {
+        @include font-main-title;
+    }
+}
