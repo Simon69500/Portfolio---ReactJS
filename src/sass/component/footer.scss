@@ -1,0 +1,36 @@
+@import '../font.scss';
+@import '../variables';
+
+.contenairFooter {
+    @include font-main-text;
+
+    .cardContact {
+            .contactTitle .linkTitle .portfolioTitle {
+        @include font-main-title;
+    }
+    }
+
+        .footerText {
+        @include font-main-text;
+
+        &:hover {
+            font-weight: bold !important;
+        }
+    }
+        .cardIcon {
+        width: 60%;
+        color: $dark;  // couleur par défaut (exemple)
+
+        .icon {
+            fill: currentColor;
+            transition: fill 0.2s ease-in-out;
+            cursor: pointer;
+
+               &:hover {
+            color: white  !important; 
+          }
+        }
+
+     
+}  
+}
