@@ -7,3 +7,27 @@
   padding-left: 20px;
 }
 
+.cardBurgerMenu   {
+  .burgerList  {
+  @include font-main-title;
+
+    .active-link {
+      text-decoration: underline;
+      text-decoration-color: $light;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+  }
+}
+
+
+
+.listMenu {
+    @include font-main-title;
+      .active-link {
+        text-decoration: underline;
+        text-decoration-color: $light;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+    }
+}

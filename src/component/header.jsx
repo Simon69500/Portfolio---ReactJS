@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import '../sass/component/header.scss';
 
 
@@ -10,16 +11,18 @@ export default function Header() {
                 
                 {/* Contenu du menu */}
                   <div
-                    className="collapse position-absolute bg-dark rounded shadow"
+                    className="collapse position-absolute bg-dark rounded shadow w-100"
                     id="navbarToggleExternalContent"
-                    style={{ top: '100%', right: 0, width: '200px', zIndex: 1050 }}
-        >
-                    <div className="bg-dark p-3 rounded">
-                        <h5 className="text-white h4">Menu Mobile</h5>
-                        <ul className="nav flex-column">
-                            <li className="nav-item"><a className="nav-link text-white" href="#">Accueil</a></li>
-                            <li className="nav-item"><a className="nav-link text-white" href="#">Lien 1</a></li>
-                            <li className="nav-item"><a className="nav-link text-white" href="#">Lien 2</a></li>
+                  >
+                    <div className=" cardBurgerMenu bg-dark rounded">
+                        <ul className="burgerList 
+                        text-start nav  flex-column 
+                        ps-5 mt-5 pt-3 pb-2">
+                            <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/">HOME</NavLink></li>
+                            <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Service">SERVICES</NavLink></li>
+                            <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Portfolio">PORTFOLIO</NavLink></li>
+                            <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Contact">CONTACT</NavLink></li>
+                            <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Mentions">MENTIONS LEGALES</NavLink></li>
                         </ul>
                     </div>
                 </div>
@@ -43,18 +46,14 @@ export default function Header() {
 
 
             {/* Menu desktop */}
-            <div className="d-none d-md-flex bg-dark p-2 align-items-center justify-content-between">
+            <div className="cardBurgerMenu  d-none d-md-flex bg-dark p-2 align-items-center justify-content-between">
                 <h1 className="titleMenu text-light m-0 ps-5">JOHN DOE</h1>
-                <ul className="nav">
-                    <li className="nav-item">
-                    <a className="nav-link text-white" href="#">Accueil</a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link text-white" href="#">Lien 1</a>
-                    </li>
-                    <li className="nav-item">
-                    <a className="nav-link text-white" href="#">Lien 2</a>
-                    </li>
+                <ul className="listMenu nav pe-5">
+                    <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/">HOME</NavLink></li>
+                    <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Service">SERVICES</NavLink></li>
+                    <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Portfolio">PORTFOLIO</NavLink></li>
+                    <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Contact">CONTACT</NavLink></li>
+                    <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Mentions">MENTIONS LEGALES</NavLink></li>
                 </ul>
             </div>
 
