@@ -1,5 +1,6 @@
 import Footer from "../component/footer"
 import Header from "../component/header"
+import '../sass/pages/home.scss';
 
 export default function Home() {
 return(
