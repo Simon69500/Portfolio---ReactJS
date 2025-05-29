@@ -30,7 +30,7 @@ export default function Header() {
 
                 {/* Bouton burger - Mobile */}
                 <nav className="navbar navbar-dark bg-dark d-flex align-items-center px3">
-                    <h1 className="titleMenu text-light m-0 ps-5">JOHN DOE</h1>
+                    <h1 className="titleMenu text-light m-0 ps-5 fs-3">JOHN DOE</h1>
                         <button
                             className="navbar-toggler ms-auto"
                             type="button"

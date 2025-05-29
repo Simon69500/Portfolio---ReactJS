@@ -1,24 +1,27 @@
 @import '../font.scss';
 @import '../variables';
 
-.titleMenu {
-  @include font-main-title;
-}
-
 
 /* Partie Mobile*/
-.cardBurgerMenu   {
-  .burgerList  {
+@media (max-width: 768px) {
+  .titleMenu {
   @include font-main-title;
+  }
 
-    .active-link {
-      text-decoration: underline;
-      text-decoration-color: $light;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
+  .cardBurgerMenu   {
+    .burgerList  {
+    @include font-main-title;
+
+      .active-link {
+        text-decoration: underline;
+        text-decoration-color: $light;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
     }
   }
 }
+
 
 /* Partie Tablette*/
   @media (min-width: 768px) {
