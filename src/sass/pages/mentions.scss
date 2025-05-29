@@ -1,6 +1,12 @@
 @import '../font.scss';
 @import '../variables';
 
+.Container {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
 main {
     @include font-main-text;
 
@@ -11,5 +17,7 @@ main {
 
 /* Partie Tablette*/
   @media (min-width: 768px) {
-    
+    .accordion {
+        width: 80%;
+    }
   }

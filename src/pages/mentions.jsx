@@ -5,14 +5,14 @@ import Header from "../component/header"
 
 export default function Mentions() {
 return(
-    <div>
+    <div className='Container'>
     <Header/>
-    <main className='bg-light'>
+    <main className='bg-light mb-5 pb-5'>
             <h1 className='cardTitle card-title fs-3 pt-3'>Mentions légales</h1>
             <div className='border-bottom border-primary border-4 w-25 mx-auto mb-5 mt-2'></div>
 
                     {/* Accordéon  */}
-            <div className="accordion m-2 mb-5" id="accordionExample">
+            <div className="accordion mx-auto m-2 mb-5" id="accordionExample">
 
                 {/* Accordéon 1 -Editeur du site */}
   <div className="accordion-item">
@@ -100,7 +100,7 @@ return(
             <i>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <a href="https://pixabay.com/fr/">Pixabay</a></i>    
         </p>
         <p  className='text-start'>
-            <i>La favicon de ce site a été fournie par <a href="">John Doe Icons erstellt von Freepik - Flaticon</a></i>    
+            <i>La favicon de ce site a été fournie par <a href="#">John Doe Icons erstellt von Freepik - Flaticon</a></i>    
         </p>      
     </div>
     </div>
