@@ -1,9 +1,6 @@
 @import '../font.scss';
 @import '../variables';
 
-/* Partie Desktop*/
-@media (min-width: 1024px) {
-    article {
-        width: 100%;
-    }
+.contentBody {
+    @include font-main-text;
 }

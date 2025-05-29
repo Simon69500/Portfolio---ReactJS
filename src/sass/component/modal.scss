@@ -1,9 +1,10 @@
 @import '../font.scss';
 @import '../variables';
 
-/* Partie Desktop*/
-@media (min-width: 1024px) {
-    .modal-content {
-        width: 700px !important;
-    }
+h1 h2 {
+    @include font-main-title;
+}
+
+.modal-content {
+    @include font-main-text;
 }
