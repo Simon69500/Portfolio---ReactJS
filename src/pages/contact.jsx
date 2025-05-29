@@ -8,14 +8,14 @@ return(
     <div>
     <Header/>
                     {/* Titre Principal de la page */}
-            <main className=' border-0 d-flex flex-column  justify-content-between m-0 pb-5 p-1'>
-
-            <section className='card border-0 w-100 p-0 m-0'>
-                <h1 className='cardTitle card-title'>Contact</h1>
-                <p className=''>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact</p>
+    <main className='bg-light border-0 d-flex flex-column  justify-content-between m-0 pb-5 p-1'>
+                <h1 className='cardTitle card-title fs-2 pt-3'>Contact</h1>
+                <p className='fs-6'>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact</p>
                 <div className='border-bottom border-primary border-4 w-25 mx-auto mb-5 mt-2'></div>
 
-                <section className="d-flex flex-column align-items-start">
+            <section className='card border-0 w-75 p-0 m-0 p-md-2 flex-md-row justify-content-md-center mx-auto'>
+
+                <section className="d-flex flex-column align-items-start col-md-6 px-md-2">
                     <h2 className="card-title border-bottom border-primary border-3 w-100 pb-3 mt-3 text-start fw-bold">Formulaire de contact</h2>
 
                     <form className=' d-flex flex-column align-items-start w-100 p-3 mt-4'>
@@ -39,7 +39,7 @@ return(
                 </section>
 
 
-                <section className="">
+                <section className="col-md-6 px-md-2">
                     <h2 className="card-title border-bottom border-primary border-3 w-100 pb-3 mt-3 text-start fw-bold">Mes cordonnées</h2>
                     <div className="d-flex flex-column align-items-start" >
                         <h3 className="contactTitle fs-5 fw-bold m-0 mt-5 pb-2 px-md-0">Jonh Doe</h3>
@@ -75,8 +75,16 @@ return(
                             <p className="fs-6 fw-normal m-0 px-1">john.doe@gmail.com</p>
                         </div>
                     </div>
-                    <iframe className='my-3 mx-2' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.626969474785!2d4.794107990939151!3d45.77866563784522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e0!3m2!1sfr!2sfr!4v1748464146396!5m2!1sfr!2sfr" 
-                            width="450" height="450" style={{border:0,}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div className="ratio ratio-1x1 my-3 mx-2">
+                    <iframe
+                        title="Carte Google Maps du 40 Rue Laure Diebold, Lyon"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.626969474785!2d4.794107990939151!3d45.77866563784522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb65edac5b3f%3A0xe01c47049cb2e2b9!2s40%20Rue%20Laure%20Diebold%2C%2069009%20Lyon!5e0!3m2!1sfr!2sfr!4v1748464146396!5m2!1sfr!2sfr"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                    </div>
                 </section>
             </section>
             </main>
