@@ -1,49 +1,95 @@
 @import '../font.scss';
 @import '../variables';
 
-.titleMenu {
+
+/* Partie Mobile*/
+@media (max-width: 768px) {
+  .titleMenu {
   @include font-main-title;
-  text-align: center;
-  padding-left: 20px;
+  }
+
+  .cardBurgerMenu   {
+    .burgerList  {
+    @include font-main-title;
+
+      .active-link {
+        text-decoration: underline;
+        text-decoration-color: $light;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+    }
+  }
 }
 
 
-/* Partie Mobile*/
-.cardBurgerMenu   {
-  .burgerList  {
-  @include font-main-title;
+/* Partie Tablette*/
+  @media (min-width: 768px) {
+  .cardMenu {
 
-    .active-link {
-      text-decoration: underline;
-      text-decoration-color: $light;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 3px;
+    .titleMenu {
+      @include font-main-title;
+      font-size: 0.7rem;
+    }
+
+    .listMenu {
+    @include font-main-title;
+   
+        .nav-link {
+        transition: all 0.2s ease-in-out;
+        font-size: 0.5rem;
+        padding: 5px;
+
+
+      &:hover {
+          text-decoration: underline;
+          text-decoration-color: $light;
+          text-decoration-thickness: 1px;
+          text-underline-offset: 3px;
+        }
+      }
+
+      .active-link {
+        text-decoration: underline;
+        text-decoration-color: $light;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+        font-weight: 900; 
+      }
     }
   }
 }
 
 
 /* Partie Desktop*/
-.listMenu {
-  @include font-main-title;
+@media (min-width: 1024px) {
+  .cardMenu {
+    .titleMenu {
+      @include font-main-title;
+      font-size: 1.3rem;
+    }
 
-  .nav-link {
-    font-weight: 400; 
-    transition: all 0.2s ease-in-out;
+    .listMenu {
+        .nav-link {
+        transition: all 0.2s ease-in-out;
+        font-size: 1rem;
+        padding: 5px;
 
-  &:hover {
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: $light;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+    }
+
+    .active-link {
       text-decoration: underline;
       text-decoration-color: $light;
       text-decoration-thickness: 1px;
       text-underline-offset: 3px;
+      font-weight: 900; 
     }
   }
-
-  .active-link {
-    text-decoration: underline;
-    text-decoration-color: $light;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 3px;
-    font-weight: 900; 
-  }
+}
 }

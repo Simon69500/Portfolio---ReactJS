@@ -30,7 +30,7 @@ export default function Header() {
 
                 {/* Bouton burger - Mobile */}
                 <nav className="navbar navbar-dark bg-dark d-flex align-items-center px3">
-                    <h1 className="titleMenu text-light m-0 ps-5">JOHN DOE</h1>
+                    <h1 className="titleMenu text-light m-0 ps-5 fs-3">JOHN DOE</h1>
                         <button
                             className="navbar-toggler ms-auto"
                             type="button"
@@ -47,10 +47,11 @@ export default function Header() {
 
 
             {/* Menu desktop - tablette*/}
-            <div className="cardBurgerMenu  d-none d-md-flex bg-dark p-2 align-items-center justify-content-between">
-                <h1 className="titleMenu text-light m-0 ps-5">JOHN DOE</h1>
-                <ul className="listMenu nav pe-5">
-                    <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/">HOME</NavLink></li>
+            <div className="cardMenu  d-none d-md-flex flex-row bg-dark p-2  align-items-center justify-content-between">
+                <h1 className="titleMenu text-light m-0 px-3 "> JOHN DOE
+                </h1>
+                <ul className="listMenu nav ">
+                    <li className="nav-item "><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/">HOME</NavLink></li>
                     <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Service">SERVICES</NavLink></li>
                     <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Portfolio">PORTFOLIO</NavLink></li>
                     <li className="nav-item"><NavLink className={({isActive}) => isActive ? "nav-link text-white active-link" : "nav-link text-white"} to="/Contact">CONTACT</NavLink></li>
