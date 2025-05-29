@@ -7,11 +7,12 @@ export default function Mentions() {
 return(
     <div>
     <Header/>
-    <main>
-            <h1 className='cardTitle card-title'>Contact</h1>
+    <main className='bg-light'>
+            <h1 className='cardTitle card-title fs-3 pt-3'>Mentions légales</h1>
             <div className='border-bottom border-primary border-4 w-25 mx-auto mb-5 mt-2'></div>
-            <div className="accordion" id="accordionExample">
 
+                    {/* Accordéon  */}
+            <div className="accordion m-2 mb-5" id="accordionExample">
 
                 {/* Accordéon 1 -Editeur du site */}
   <div className="accordion-item">
