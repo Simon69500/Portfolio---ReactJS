@@ -12,35 +12,46 @@ main {
 /* Partie Tablette*/
   @media (min-width: 768px) {
     main {
-    @include font-main-text;
-    
-    .cardArticle {
-        width: 85%;
+        @include font-main-text;
+        
+        .cardArticle {
+            width: 85%;
 
-        .articleSection {
-            width: 40%;
+            .articleSection {
+                width: 40%;
+            }
+
+            p {
+            font-size: 0.7rem;
+            }
         }
-
-        p {
-        font-size: 0.7rem;
-    }
-    }
-    
-    .card-title {
-        @include font-main-title;
-    }
-
+        
+        .card-title {
+            @include font-main-title;
+        }
     }
   }
 
 
-  /* Partie Desktop*/
-@media (min-width: 1024px) {
-        main {
-    @include font-main-text;
+/* Partie Desktop*/
+  @media (min-width: 1024px) {
+    main {
+        @include font-main-text;
+        
+        .cardArticle {
+            width: 85%;
 
-    .card-title {
-        @include font-main-title;
+            .articleSection {
+                width: 40%;
+            }
+
+            p {
+            font-size: 1rem;
+            }
+        }
+        
+        .card-title {
+            @include font-main-title;
+        }
     }
-}
-}
+  }

@@ -30,7 +30,7 @@ return(
         </div>
 
 
-        {/* Contenu du milieu de la page - A propos */}
+        {/* Contenu de la page Article - A propos */}
         <article className="cardArticle card p-4 m-4 shadow-sm d-md-flex flex-md-row justify-content-md-center  p-md-0  mx-auto"
                   style={{boxShadow: '8px 0 12px -6px rgba(108, 117, 125, 0.3)', border: '1px solid #dee2e6'}}                
         >
@@ -54,7 +54,7 @@ return(
             </section>
 
 
-            {/* Contenu de fin de la page - Mes compétences */}
+            {/* Contenu de la page Article - Mes compétences */}
             <section className="articleSection d-flex flex-column align-items-start pb-4 
                                 d-md-flex flex-md-column align-items-md-center col-md-6 mx-auto 
             ">
