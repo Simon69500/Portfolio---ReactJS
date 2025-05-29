@@ -32,16 +32,16 @@ Ce projet a été réalisé dans le cadre d’une formation, en appliquant les b
 ```bash
 git clone https://github.com/votre-utilisateur/votre-depot.git
 cd votre-depot
-2. Installer les dépendances
-bash
-Copier
-Modifier
+
+### 2. Installer les dépendances
+
+```bash
 npm install
-3. Lancer le serveur de développement
-bash
-Copier
-Modifier
+
+### 3. Lancer le serveur de développement
+```bash
 npm start
+
 Ouvrir le navigateur à l’adresse suivante :
 http://localhost:3000
 
