@@ -18,3 +18,14 @@
         @include font-main-title;
     }
 }
+
+/* Partie Tablette*/
+  @media (min-width: 768px) {
+    p {
+      font-size: 0.7rem;
+    }
+
+    .cardTitle {
+      font-size: 1rem;
+    }
+  }
