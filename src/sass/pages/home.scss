@@ -8,3 +8,39 @@ main {
         @include font-main-title;
     }
 }
+
+/* Partie Tablette*/
+  @media (min-width: 768px) {
+    main {
+    @include font-main-text;
+    
+    .cardArticle {
+        width: 85%;
+
+        .articleSection {
+            width: 40%;
+        }
+
+        p {
+        font-size: 0.7rem;
+    }
+    }
+    
+    .card-title {
+        @include font-main-title;
+    }
+
+    }
+  }
+
+
+  /* Partie Desktop*/
+@media (min-width: 1024px) {
+        main {
+    @include font-main-text;
+
+    .card-title {
+        @include font-main-title;
+    }
+}
+}
