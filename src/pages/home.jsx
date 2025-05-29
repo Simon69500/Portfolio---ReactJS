@@ -1,5 +1,7 @@
 import Footer from "../component/footer"
 import Header from "../component/header"
+import Modal from "../component/modal";
+
 import '../sass/pages/home.scss';
 
 export default function Home() {
@@ -19,7 +21,12 @@ return(
             <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
                 <h1 className="card-title">Bonjour, je suis John Doe</h1>
                 <h2 className="card-text">Développeur web full stack</h2>
-                <button className="btn btn-danger mt-3">En savoir plus</button>
+                <button className="btn btn-danger mt-3"
+                    data-bs-toggle="modal" 
+                    data-bs-target="#staticBackdrop" 
+                 >
+                    En savoir plus
+                </button>
             </div>
         </div>
 
@@ -107,6 +114,7 @@ return(
         </article>
     </main>
     <Footer/>
+    <Modal/>
     </div>
 )
 };
