@@ -5,12 +5,6 @@ export default function Modal() {
 
     return (
         <>
-          
-         <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Launch static backdrop modal
-            </button>
-
-
         <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div className="modal-dialog m-4 rounded-3 border border-1 border-secondary">
             <div className="modal-content bg-dark text-white">
