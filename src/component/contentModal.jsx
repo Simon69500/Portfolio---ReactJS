@@ -16,7 +16,7 @@ export default function ContentModal() {
 
     return (
         <section className="contentBody contenair d-flex flex-column align-items-center justify-content-center m-4">
-                <article key={users.id}>
+                <article className="d-xl-flex flex-xl-row " key={users.id}>
                     <div className="d-flex flex-column align-items-center">
                         <img src={users.avatar_url} alt={users.login} width="300" />
                     </div>
