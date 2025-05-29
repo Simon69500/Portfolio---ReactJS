@@ -1,76 +1,96 @@
-🌐 Portfolio de John DOE
-Ce projet est un site web personnel développé pour John DOE, un développeur web en formation au Centre Européen de Formation (CEF). Il s’agit d’un site vitrine professionnel permettant de présenter son profil, ses compétences, ses projets réalisés, ainsi que ses coordonnées.
+# 🌐 Site Portfolio de John DOE
 
-L’objectif principal est de renforcer sa visibilité en ligne dans le cadre de sa recherche d’alternance, tout en respectant les standards du web (accessibilité, SEO, W3C).
+Ce projet est un site internet personnel réalisé pour **John DOE**, un développeur web en formation au **Centre Européen de Formation (CEF)**.  
+L'objectif est de créer un site vitrine professionnel pour présenter :
 
-🚀 Technologies utilisées
-React.js — pour la structure du site
+- Son profil
+- Ses compétences
+- Ses réalisations
+- Ses informations de contact
 
-Bootstrap 5 — pour la mise en page responsive
+Ce site a pour but de faciliter sa **recherche d’alternance** et sa **visibilité sur le marché de l’emploi**.
 
-SCSS personnalisé — pour l’adaptation à la charte graphique et les effets visuels
+Le projet est développé avec **React.js**, utilisant le framework **Bootstrap** pour la mise en page, ainsi qu’un **CSS personnalisé** pour respecter une charte graphique spécifique.  
+Les contenus (textes et images) sont personnalisables, tout en respectant les consignes fournies (ex : images libres de droits issues de [Pixabay](https://pixabay.com)).
 
-Pixabay — pour les images libres de droits
+Ce projet a été réalisé dans le cadre d’une formation, en appliquant les bonnes pratiques en matière de **SEO** et de **validité W3C** du code.
 
-✅ Objectifs pédagogiques
-Créer un site vitrine moderne et responsive
+---
 
-Respecter les bonnes pratiques en HTML5/CSS3 et SEO
+## ⚙️ Prérequis
 
-Produire un code valide (normes W3C)
+- [Node.js](https://nodejs.org/) (version 14 ou supérieure recommandée)  
+- [npm](https://www.npmjs.com/) (gestionnaire de paquets Node.js)  
+- Un **navigateur moderne** (Chrome, Firefox, Edge…)
 
-S'initier aux frameworks modernes (React, Bootstrap)
+---
 
-🔧 Prérequis
-Node.js v14 ou supérieur
+## 🚀 Installation et lancement du projet
 
-npm (fourni avec Node.js)
+### 1. Cloner le dépôt
 
-Un navigateur moderne (Chrome, Firefox, Edge...)
-
-⚙️ Installation
-Clonez ce dépôt :
-
-bash
-Copier
-Modifier
+```bash
 git clone https://github.com/votre-utilisateur/votre-depot.git
 cd votre-depot
-Installez les dépendances :
-
+2. Installer les dépendances
 bash
 Copier
 Modifier
 npm install
-Lancez le serveur de développement :
-
+3. Lancer le serveur de développement
 bash
 Copier
 Modifier
 npm start
-Ouvrez votre navigateur à l’adresse :
-
+Ouvrir le navigateur à l’adresse suivante :
 http://localhost:3000
 
+L'application se lancera en mode développement, avec rechargement automatique lors des modifications.
+
 📦 Scripts disponibles
-Dans le dossier du projet, vous pouvez exécuter :
+Dans le répertoire du projet, vous pouvez exécuter :
 
-npm start : démarre l'application en mode développement
+npm start
+Lance l'application en mode développement.
+Ouvre automatiquement http://localhost:3000.
+Rechargement à chaud activé.
 
-npm test : lance les tests en mode interactif
+npm test
+Lance le test runner en mode interactif.
+Voir la documentation sur les tests.
 
-npm run build : construit l'application pour la production
+npm run build
+Crée une version de production optimisée dans le dossier build.
 
-npm run eject : expose la configuration de CRA (attention : action irréversible)
+Minification
 
-📚 Ressources utiles
+Hash des fichiers pour le cache
+
+Prêt pour déploiement
+
+Voir section "Déploiement".
+
+npm run eject
+⚠️ Cette opération est irréversible. Elle expose toute la configuration interne (webpack, Babel, etc.).
+À n'utiliser que si vous avez besoin de personnalisation avancée.
+
+📚 En savoir plus
 Documentation Create React App
 
 Documentation React
 
-Documentation Bootstrap
+Déploiement
 
-Images libres de droits — Pixabay
+Analyse de la taille des bundles
 
-📄 Licence
-Ce projet a été réalisé dans un but pédagogique dans le cadre d’une formation. Il peut être librement modifié à des fins d’apprentissage.
+Créer une Progressive Web App
+
+🧩 Remarques techniques
+Respect des normes d'accessibilité (ex. : utilisation correcte des balises H1/H2, attributs ARIA...)
+
+Structure responsive adaptée aux mobiles et tablettes
+
+Code validé W3C
+
+© John DOE – Projet de formation CEF
+📧 Contact : à personnaliser dans le site
