@@ -7,6 +7,12 @@ main {
     .card-title {
         @include font-main-title;
     }
+        .btn {
+            &:hover {
+            background-color: #df8080;
+        }
+        }
+
 }
 
 /* Partie Tablette*/
